@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Talks – Nisän Haramati</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gotham">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card w3-left-align w3-large wrapper-parent">
+                <div class="wrapper-child">
+                    <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-teal w3-large w3-teal"  href="javascript:void(0);
+    " onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
+                    <!--  <a href="#me" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey w3-white current-page">Nisän Haramati</a> -->
+                     <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey current-page">Bio</a>
+                     <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Blog</a>
+                     <a href="talks.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Talks</a>
+                     <a href="cv.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">CV</a>
+                     <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 0. Header -->
+        <header class="w3-container w3-light-grey w3-center" id="me">
+            <div class="header-container">
+                <div style="background-image: url('https://haramati.ca/static/img/Headshot018-DSC_8958_600x900.jpg')" class="bio-pic">
+                </div>
+                <div class="header-content">
+                     <h1 class="w3-margin w3-xxxlarge">Nisän Haramati</h1>
+                     <h2 class="w3-large">Distributed Systems Engineer at Wallaroo Labs</h2>
+                    <div class="w3-xlarge w3-padding-32 header-social">
+                         <a href="https://twitter.com/nisanharamati" target="_blank"><i class="fa fa-twitter w3-hover-opacity w3-text-teal"></i></a>
+                         <a href="https://ca.linkedin.com/in/nisanharamati" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-text-teal"></i></a>
+                         <a href="mailto:nisan@haramati.ca" target="_blank"><i class="fa fa-envelope w3-hover-opacity w3-text-teal"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-white w3-hide-large w3-large nav-mobile w3-card">
+                 <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white current-page">Bio</a>
+                 <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white current-page">Blog</a>
+                 <a href="talks.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white current-page">Talks</a>
+                 <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white current-page">CV</a>
+                 <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white current-page">Contact</a>
+            </div>
+        </header>
+
+        <div class="body-content">
+
+            <!-- 3. Talks -->
+            <div class="w3-row-padding w3-white w3-padding-64 w3-container full-height" id="talks">
+                <div class="w3-content">
+
+                     <h2 class="title-bar">Talks</h2>
+
+                     <p><a href="talks.html">&laquo; Back to all talks</a></p>
+
+                     <h3>Title</h3>
+                    Resilience Engineering: Identifying Reliability Dependencies and Common Mitigation Strategies
+
+                     <h3>Abstract</h3>
+                    Learn how to identify reliability dependencies and apply mitigation strategies like failure isolation, failure injection, end-to-end testing, and system level fuzzing. These skills help you reduce the occurrence of unexpected failures and improve the
+                    reliability of your systems.
+
+                     <h3>Description</h3>
+                    <p>Resilience engineering is one of those things we all want to do, but never quite find the time to practice. There are always fires to put out and new infrastructure to deploy.</p>
+
+                    <p>This talk will cover the fundamentals required for applying resilience engineering principles in your day to day work. It will cover how to identify the system dependencies that affect component and system-level service quality, and
+                        then go over some of the mitigation strategies that you can employ to prevent and alleviate failures in your own environment, starting from the simplest and cheapest, and then increasing in terms time, cost, and knowledge requirements.</p>It
+                    will cover:
+                    <ol>
+                        <li>Dependency mapping: identifying the pathways through which service level degradation in one component can affect that of another (e.g. backpressure, partial outages, network connections, etc.)</li>
+                        <li>Failure isolation: isolating components and eliminating failure cascades where possible.</li>
+                        <li>Destructive testing and failure injection in order to learn about the failure mechanisms and behaviours of your system. This can be done in a separate “lab” environment or directly in a production system. The latter is often called
+                            Chaos Engineering.</li>
+                        <li>End-to-end testing: conformance testing and verification for overall system behaviour and output under varying conditions and sequences of events.</li>
+                    </ol>
+                     <a href="https://haramati.ca/static/pdf/NisanHaramati_DevOpsDaysYVR2019.pdf">PDF File download »<br/><img src="https://haramati.ca/static/img/NisanHaramati_DevOpsDaysYVR2019.png" style="width: 100%; max-width:200px" /></a>
+
+
+                     <h3>Additional Resources</h3>
+                     <h4>Testing</h4>
+                     <ol>
+                       <li><a href="https://github.com/asatarin/testing-distributed-systems">Resources on Testing Distributed Systems</a></li>
+                       <li><a href="https://queue.acm.org/detail.cfm?id=2800697">Testing a Distributed System (End to End testing)</a></li>
+                       <li><a href="https://www.hillelwayne.com/post/a-bunch-of-tests/">Types of Tests</a></li>
+                       <li><a href="https://principlesofchaos.org/">Chaos Engineering</a></li>
+                     </ol>
+
+                     <h4>Resilience</h4>
+                     <ol>
+                       <li><a href="http://erikhollnagel.com/ideas/resilience-engineering.html">Resilience Engineering</a></li>
+                       <li><a href="https://github.com/lorin/resilience-engineering">Resilience Engineering Resources</a></li>
+                     </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-0 w3-center w3-light-gray w3-text-teal">
+            <div class="footer-container">
+                <div class="footer-social-media">
+                    <p><a href="https://twitter.com/nisanharamati" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                         <a href="https://ca.linkedin.com/in/nisanharamati" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                         <a href="mailto:nisan@haramati.ca" target="_blank"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+                    </p>
+                </div>
+                <div class="footer-copy">
+                    <p><script>new Date().getFullYear()>2018&&document.write("&copy;&nbsp;"+new Date().getFullYear());</script> Nisän Haramati</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+        </script>
+
+    </body>
+
+</html>

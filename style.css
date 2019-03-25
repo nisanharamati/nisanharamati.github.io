@@ -1,0 +1,155 @@
+        h1, h2, h3, h4, h5, h6 {
+            font-family:"Montserrat", sans-serif
+        }
+        .w3-bar, button, body {
+            font-family:"Montserrat", sans-serif
+        }
+        .wrapper-child {
+            display: inline-flex;
+        }
+        .wrapper-parent {
+            text-align: center !important;
+        }
+        .full-height {
+            height: 100vh;
+            overflow: auto;
+        }
+        .bio-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            background: no-repeat center;
+            background-size: cover;
+        }
+        .w3-content {
+            width: 75%;
+            max-width: 600px;
+            
+        }
+        .w3-bar-item:hover, .title-bar {
+            border-bottom: 5px teal solid !important;
+        }
+        .title-bar {
+            width: 33%;
+        }
+        .current-page {
+            border-bottom: 5px white solid !important;
+        }
+        a {
+            text-decoration: none;
+            color: teal;
+        }
+        .w3-content a:hover {
+            text-decoration: underline;
+        }
+        header {
+            padding:108px 16px 28px !important
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-social-media {
+            float: right;
+        }
+        .footer-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .footer-copy {
+            float: left;
+        }
+        .tabcontent {
+            display: none;
+        }
+        .w3-content {
+            padding-bottom: 75px;
+        }
+        /***desktop view***/
+        @media only screen and (min-width: 993px) {
+            .body-content {
+                width: 66%;
+                float: right;
+                min-height: 100vh;
+                padding-left: 5%;
+            }
+            header {
+                width: 34%;
+                float: left;
+                min-height: 100vh;
+            }
+            footer {
+                width: 34% !important;
+            }
+            .footer-social-media {
+                display: none;
+            }
+            .footer-copy {
+                float: none
+            }
+            .w3-content {
+                margin: initial;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            .bio-pic {
+                width: 80px;
+                height: 80px;
+                float: left;
+                display: block;
+                margin-right: 10px;
+            }
+            .header-container {
+                width: 75%;
+                max-width: 600px;
+                min-width: 300px;
+                height: 100px;
+                margin: auto;
+                padding: 10px;
+            }
+            h1.w3-xxxlarge {
+                font-size: x-large !important;
+                padding: 10px 0px 0px !important;
+                margin:0 !important;
+            }
+            header {
+                padding: 0 !important;
+                width:100%;
+                position: fixed;
+                top: 0;
+            }
+            .w3-top {
+                display: none;
+            }
+            .w3-content {
+            	padding-top: 120px !important;
+            }
+            .header-content {
+                text-align: left;
+            }
+            .header-social {
+                padding: 0 !important;
+                font-size: large !important
+            }
+            .current-page {
+                border-top: 5px white solid;
+            }
+            .header-content h2 {
+                margin: 0px; font-size: medium !important;
+            }
+            .header-social {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .current-page {
+                font-size: 0.75em;
+                padding: 10px !important;
+            }
+            .header-content h2 {
+                margin: 0px; font-size: small !important;
+            }
+        }
