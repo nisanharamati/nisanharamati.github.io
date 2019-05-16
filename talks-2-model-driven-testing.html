@@ -66,16 +66,30 @@
 
                      <h2 class="title-bar">Talks</h2>
 
-                     <h4>01.</h4>
-                    <a href="talks-1-resilience-engineering.html">Resilience Engineering: Identifying Reliability Dependencies and Common Mitigation Strategies (DevOpsDays YVR 2019)<br/><br/>
-                    <img src="/static/img/NisanHaramati_DevOpsDaysYVR2019.png" style="width: 100%; max-width:400px" /></a>
+                     <p><a href="talks.html">&laquo; Back to all talks</a></p>
 
-                     <h4>02.</h4>
-                    <a href="talks-2-model-driven-testing.html">Model-Driven Testing: A Property-Based Approach to End-to-End Testing (Heisenbug St. Petersburg, 2019)<br/><br/>
-                    <img src="/static/img/NisanHaramati-HeisenbugPiter2019-MDT.png" style="width: 100%; max-width:400px" /></a>
+                     <h3>Title</h3>
+                     Model-Driven Testing: A Property-Based Appraoch to End-to-End Testing
+
+                     <h3>Abstract</h3>
+                     Model-Driven Testing is a testing method using a conceptual and programmatic model to combine Property-Based testing and End-to-End testing in order to automate the testing of complex distributed systems with large test spaces.
+
+                     <h3>Description</h3>
+
+                     <p>We often joke that the only thing harder than building a distributed system is testing it. And as with most jokes, there is a truth at its core. Distributed systems are difficult to test because their complexity grows in two directions: the complexity of concurrently moving parts is compounded by the unreliability of the distribution medium itself, often leading to failure circumstances that are as difficult to predict as they are to reproduce.</p>
+
+                     <p>Property-based testing is the method of repeated execution of a function over a wide range of (possibly random) inputs in order to find cases where a specified property is violated. It can be further enhanced with a refinement process that minimizes the failing input range. This method is often helpful in discovering earlier the sort of edge-case bugs that would otherwise only crop up in production.</p>
+
+                     <p>When it comes to testing the properties of Wallaroo, a framework for building distributed data applications, the idea of combining property-based testing methods with end-to-end tests seemed liked a natural fit. On the one hand, we can leverage the property-based tests to show that Wallaroo's core properties hold over a broad range of application designs and system events (such as cluster scaling, network errors, and process crashes). And on the other hand, the end-to-end tests help show that these applications do, in fact, work in a variety of real-world conditions.</p>
+
+                     <p>This presentation will focus on the challenges and benefits of using property-based testing in the end-to-end tests of distributed systems like Wallaroo. It will walk through the infrastructure and automation requirements, the signal design theory underpinning the tests, the active cycle of generation-execution-refinement for obtaining minimal reproducing test cases, and finally the results and lessons learned in the process.</p>
+
+                     <a href="/static/pdf/NisanHaramati-HeisenbugPiter2019-MDT.pdf">PDF File download »<br/><img src="/static/img/NisanHaramati-HeisenbugPiter2019-MDT.png" style="width: 100%; max-width:200px" /></a>
+                    <p/>
 
                 </div>
             </div>
+
         </div>
 
         <!-- Footer -->
